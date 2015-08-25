@@ -1,3 +1,7 @@
+*** Overview ***
+
+This project contains two basic rails apps which contain no more than a Workflow model which holds a name and JSON blob. There are two scripts, one to load a JSON record and the other to query it by the ID of one of the nodes. In production that ID would be, I presume, the BSON or integer ID of a Material record within TeSS.
+
 ** Mongodb **
 
 1. Install mongodb with default settings (127.0.0.1:27017, no security).
