@@ -32,7 +32,7 @@ First:
   * create user tess password 'training';
   * grant all on tess_development to tess;
   * ...should now be able to connect with 'psql -U tess -W -d tess_development'
-2. Handy postgres/rails tutorial: https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04 
+2. Handy postgres/rails tutorials: https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04, http://robertbeene.com/rails-4-2-and-postgresql-9-4/
 3. Edit config/database.yml to add the user and password defined above.
 4. Create the model: rails g scaffold workflow name:string content:json 
 5. Run rake db:migrate
