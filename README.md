@@ -13,10 +13,10 @@ First:
 2. Handy mongoid tutorial: http://railscasts.com/episodes/238-mongoid?view=asciicast
   * gem install bundler
   * gem install rails
+  * Add mongoid and bson gems to Gemfile, bundle install.
   * Use mongoid gem from git if rails generator fails: https://github.com/mongodb/mongoid.git
     At this point it may be necessary to do a bundle update.
   * rails new mongo -O (blows up if active_record is present).
-  * Add mongo and bson gems to Gemfile, bundle install.
   * rails g mongoid:config.
 3. Create the model: rails g scaffold workflow name:string content
 4. Generate a workflow entr(y|ies) by running: rails runner test_create.rb
