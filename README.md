@@ -7,6 +7,13 @@ First:
 1. rvm install ruby-2.2-head
 2. rvm use --create ruby-2.2-head@tessdbs 
 
+For an admin console this has been installed:
+
+https://github.com/sferik/rails_admin
+
+The upmin-admin gem which has been tested previously is not compatible with mongoid.
+
+
 ##  Mongodb
 
 1. Install mongodb with default settings (127.0.0.1:27017, no security).
