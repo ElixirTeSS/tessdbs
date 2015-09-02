@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
+  get 'static/welcome'
+
+  devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :workflows
+
+  root 'static#welcome'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

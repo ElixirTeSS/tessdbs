@@ -55,6 +55,10 @@ Admin has been added as a boolean flag, though roles should be incorporated for 
 
 For a welcome page:
 
-rails generate controller Static welcome
+    rails generate controller Static welcome
+
+...then set the route to the welcome method of the static controller.
+
+Some biosharing users have expressed the desire to be able to type either their username or password into the login box. The following allows this:
 
 https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address
