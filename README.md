@@ -17,7 +17,8 @@ The upmin-admin gem which has been tested previously is not compatible with mong
 ##  Mongodb
 
 1. Install mongodb with default settings (127.0.0.1:27017, no security).
-2. Handy mongoid tutorial: http://railscasts.com/episodes/238-mongoid?view=asciicast
+2. Handy mongoid tutorial: http://railscasts.com/episodes/238-mongoid?view=asciicast 
+3. How this rails app was created:
   * gem install bundler
   * gem install rails
   * Add mongoid and bson gems to Gemfile, bundle install.
@@ -25,7 +26,7 @@ The upmin-admin gem which has been tested previously is not compatible with mong
     At this point it may be necessary to do a bundle update.
   * rails new mongo -O (blows up if active_record is present).
   * rails g mongoid:config.
-3. Create the model: rails g scaffold workflow name:string content
+  * Create the model: rails g scaffold workflow name:string content
 4. Generate a workflow entr(y|ies) by running: rails runner test_create.rb
 5. Search in workflows by running: rails runner test_search.rb
 
@@ -35,8 +36,11 @@ The upmin-admin gem which has been tested previously is not compatible with mong
 
 
 1. Install postgres and add a user:
-  * create database tess_development;
-  * create user tess password 'training';
+   * create database tess_development;
+   * create user tess password 'training';
+      * `$ createuser -s tess`
+      * `$ psql`
+      * `#  \password tess`
   * grant all on tess_development to tess;
   * ...should now be able to connect with 'psql -U tess -W -d tess_development'
 2. Handy postgres/rails tutorials: https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04, http://robertbeene.com/rails-4-2-and-postgresql-9-4/
