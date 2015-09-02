@@ -47,4 +47,14 @@ The upmin-admin gem which has been tested previously is not compatible with mong
 7. Search in workflows by running: rails runner test_search.rb
 
 
+## Devise
 
+Devise has been installed in both versions, using all options except for timeoutable, omniauthable, lockable.
+
+Admin has been added as a boolean flag, though roles should be incorporated for users at a later date.
+
+For a welcome page:
+
+rails generate controller Static welcome
+
+https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address
